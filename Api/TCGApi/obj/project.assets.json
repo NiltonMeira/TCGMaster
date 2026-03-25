@@ -668,6 +668,43 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "TCGAPI.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "TCGAPI.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TCGAPI.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TCGAPI.Application.dll": {}
+        }
+      },
+      "TCGAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/TCGAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TCGAPI.Domain.dll": {}
+        }
+      },
+      "TCGAPI.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
+          "TCGAPI.Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TCGAPI.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TCGAPI.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -2196,13 +2233,30 @@
         "system.composition.typedparts.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "TCGAPI.Application/1.0.0": {
+      "type": "project",
+      "path": "TCGAPI.Application/TCGAPI.Application.csproj",
+      "msbuildProject": "TCGAPI.Application/TCGAPI.Application.csproj"
+    },
+    "TCGAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "TCGAPI.Domain/TCGAPI.Domain.csproj",
+      "msbuildProject": "TCGAPI.Domain/TCGAPI.Domain.csproj"
+    },
+    "TCGAPI.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "TCGAPI.Infrastructure/TCGAPI.Infrastructure.csproj",
+      "msbuildProject": "TCGAPI.Infrastructure/TCGAPI.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.AspNetCore.OpenApi >= 10.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.5",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 10.0.1"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 10.0.1",
+      "TCGAPI.Application >= 1.0.0",
+      "TCGAPI.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2237,7 +2291,14 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Git\\TCGMaster\\Api\\TCGApi\\TCGAPI.Application\\TCGAPI.Application.csproj": {
+              "projectPath": "C:\\Git\\TCGMaster\\Api\\TCGApi\\TCGAPI.Application\\TCGAPI.Application.csproj"
+            },
+            "C:\\Git\\TCGMaster\\Api\\TCGApi\\TCGAPI.Infrastructure\\TCGAPI.Infrastructure.csproj": {
+              "projectPath": "C:\\Git\\TCGMaster\\Api\\TCGApi\\TCGAPI.Infrastructure\\TCGAPI.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
