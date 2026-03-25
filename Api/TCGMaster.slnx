@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="TCGMaster.Api/TCGMaster.Api.csproj" />
+  <Project Path="TCGMaster.Application/TCGMaster.Application.csproj" />
+  <Project Path="TCGMaster.Domain/TCGMaster.Domain.csproj" />
+  <Project Path="TCGMaster.Infrastructure/TCGMaster.Infrastructure.csproj" />
+</Solution>
