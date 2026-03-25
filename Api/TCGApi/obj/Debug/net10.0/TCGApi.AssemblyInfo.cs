@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TCGApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c69f8c8071ff8bfd4e189a1f8b925b66082037e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de4f7450272eec20557e2f0cd4cd7f902af95747")]
 [assembly: System.Reflection.AssemblyProductAttribute("TCGApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TCGApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
