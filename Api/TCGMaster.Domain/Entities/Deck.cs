@@ -6,5 +6,5 @@ public class Deck
 
     public required string Name {get; set;}
 
-    public required List<DeckCard> Cards {get; set;}
+    public List<DeckCard> Cards { get; set; } = new();
 }

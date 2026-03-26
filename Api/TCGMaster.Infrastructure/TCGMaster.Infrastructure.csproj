@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TCGMaster.Domain\TCGMaster.Domain.csproj" />
+    <ProjectReference Include="..\TCGMaster.Application\TCGMaster.Application.csproj" />
   </ItemGroup>
 
 </Project>
