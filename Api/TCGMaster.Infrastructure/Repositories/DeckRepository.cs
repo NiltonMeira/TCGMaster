@@ -9,7 +9,7 @@ public class DeckRepository : IDeckRepository
 {
     private readonly AppDbContext _context;
 
-    private DeckRepository(AppDbContext context)
+    public DeckRepository(AppDbContext context)
     {
         _context = context;
     }
@@ -20,7 +20,7 @@ public class DeckRepository : IDeckRepository
         return deck;
     }
 
-    public async Task<Deck> GetByIdAsync(Guid id)
+    public async Task<Deck?> GetByIdAsync(Guid id)
     {
          return await _context.Decks
             .Include(d => d.Cards)
