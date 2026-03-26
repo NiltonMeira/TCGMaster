@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TCGMaster.Domain\TCGMaster.Domain.csproj" />
+    <ProjectReference Include="..\TCGMaster.Infrastructure\TCGMaster.Infrastructure.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
